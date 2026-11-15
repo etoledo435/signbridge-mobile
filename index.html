@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignBridge</title>
+  <style>
+    body { margin: 0; background: #0d1219; color: #fff; font-family: sans-serif; text-align: center; }
+    h2 { color: #00e5ff; margin: 12px 0; }
+    #wrap { position: relative; width: 100%; max-width: 480px; margin: 0 auto; }
+    video, canvas { width: 100%; transform: scaleX(-1); display: block; }
+    canvas { position: absolute; top: 0; left: 0; }
+    #status { padding: 12px; color: #00e5ff; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h2>SignBridge</h2>
+  <div id="wrap">
+    <video id="cam" playsinline muted></video>
+    <canvas id="overlay"></canvas>
+  </div>
+  <div id="status">Starting...</div>
+
+  <!-- BAGUHIN DITO: Tinanggal ang slash sa unahan ng src -->
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
